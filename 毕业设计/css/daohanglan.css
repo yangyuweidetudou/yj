@@ -1,0 +1,525 @@
+/*顶部开始*/
+.qb{
+  background-color: #8a662761;
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.dingbu{
+  background-color: #a56703;
+  width: 100%;
+  height: 70px;
+color: #341515;
+}
+.log{
+  width: 40%;
+  height: 10px;
+  font-size: 20px; 
+  border-radius: 10px;   /*边角变为圆形*/
+  font-family: "标题", serif; /* 设置字体样式 */
+  color: #2e0f03;
+  margin-top: 1%;  /*外边距*/
+}
+/*滚动动画开始*/
+  .log-2 {
+    
+    font-size: 16px; /* 设置字体大小 */
+    font-family: "华文新魏", serif; /* 设置字体样式 */
+    margin-top: 10px;  /*上边距*/
+    width: 55%; /* 设置div的宽度 */
+    white-space: nowrap; /* 防止文本换行 */
+    animation: scroll 5s linear infinite; /* 应用滚动动画 */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(-20%); /* 初始位置 */
+    }
+    100% {
+      transform: translateX(20%); /* 滚动到最右边 */
+    }
+  }
+  /*滚动动画结束*/
+  /*搜索·开始*/
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  /*搜索结束*/
+/*顶部结束*/
+/*导航栏样式*/
+nav {
+  background-color: #a25c15;
+   
+    color: #632727;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    position: relative; /* 添加相对定位 */
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #432c23;
+    font-family: "华文琥珀", serif; /* 设置字体样式 */
+    text-decoration: none;
+    margin-left: 80px;
+  }
+
+  nav ul li a:hover {
+    background-color: #3c434792;
+  }
+
+    /*轮播图*/
+    .lbt {
+      position: relative;
+      width: 1024px;
+      height: 500px;
+    }
+    .lbt img {  /*图片样式*/
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+ 
+    }
+    .lbt .prev,
+    .lbt .next {  /*按钮样式*/
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      font-weight: bold;
+      padding: 1%;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    .lbt .prev {
+      left: 1%;
+    }
+    .lbt .next {
+      right: 1%;
+    }
+
+    /*轮播图结束*/
+    .jiexian{
+      height: 500px;
+      width: 5px;
+      background-color: #c28f6d;
+      border-radius: 10px;   /*边角变为圆形*/
+    }
+    /*新闻模块*/
+    * {
+      margin: 0;
+      padding: 0;
+   }
+   /* 设置所有元素的边距和内边距为0，用于重置默认样式 */
+   
+   li {
+      list-style: none;
+   }
+   /* 取消列表项的默认样式，去除默认的项目符号或编号 */
+   
+   .xw {
+      width: 410px;
+      height: 465px;
+      border: 5px solid #cb7b0b;
+      padding: 15px;
+      background: url(img/05.jpg);
+   }
+   /* 定义一个名为 "xw" 的 CSS 类，
+   给具有该类的元素设置宽度为410像素，高度为465像素，
+   边框为5像素宽的实线，内边距为15像素，
+   背景为指定的图片 "img/05.jpg" */
+   
+   .xw h1 {
+      font-size: 20px;
+      padding: 15px 0;
+      border-bottom: 1px solid #b3520c;
+      margin-bottom: 10px;
+   }
+   /* 定义名为 "xw" 的 CSS 类中的 <h2> 元素样式，
+   设置字体大小为18像素，上下内边距为5像素，
+   底边框为1像素宽的实线，下外边距为10像素 */
+   
+   .xw ul li {
+      height: 30px;
+      border-bottom: 1px dashed #cd6505;
+      line-height: 30px;
+      background: url(img/05.jpg) no-repeat 5px center;
+      padding-left: 20px;
+   }
+   /* 定义名为 "xw" 的 CSS 类中的 <ul> 元素下的 <li> 元素样式，
+   设置高度为30像素，底边框为1像素宽的虚线，
+   行高为30像素，背景为指定的图片 "images/arr.jpg"，左内边距为20像素 */
+   
+   .xw ul li a {
+      font: normal normal 20px 'Microsoft Yahei';
+      color: #534c4c;
+      text-decoration: none;
+   }
+   /* 定义名为 "xw" 的 CSS 类中的 <li> 元素下的 <a> 元素样式，
+   设置字体为 'Microsoft Yahei'，正常字体样式，
+   大小为12像素，颜色为 #333，无文本装饰 */
+   
+/*新闻模块结束*/
+    /*线条*/
+    .xiantiao{
+      width: 100%;
+      height: 4px;
+      background-color: #915f15d5;
+    }
+    /*标题开始*/
+.biaoti-1 {
+  margin-top: 10px;  /*外边距*/
+  display: flex; /* 设置容器为flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 30px; /* 设置容器高度为视口高度 */
+}
+
+.biaoti-1-text {
+  text-align: center; /* 文字居中对齐 */
+  font-size: 30px; /* 设置字体大小 */
+  font-family: "华文琥珀", serif; /* 设置字体样式 */
+  color: #5d443a;
+}
+.biaoti-2 {
+  margin-top: 10px;  /*外边距*/
+  display: flex; /* 设置容器为flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  color: #5d443a;
+  height: 30px; /* 设置容器高度为视口高度 */
+}
+
+.biaoti-2-text {
+  text-align: center; /* 文字居中对齐 */
+  font-size: 30px; /* 设置字体大小 */
+  font-family: "华文琥珀", serif; /* 设置字体样式 */
+  
+}
+/*结束*/
+.gd{
+  margin-left: 90%; /*左边距*/
+}
+  .slt {
+    width: 350px;  /*更改两个缩略图宽度*/
+    height: 200px;  /*更改两个缩略图高度*/
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  /* 图片样式 */
+  .slt img {
+    transition: transform 0.3s;
+  }
+
+  /* 鼠标悬停时放大图片 */
+  .slt:hover img {
+    transform: scale(1.2);
+  }
+
+  /* 第一个缩略图样式 */
+  .slt.thumbnail1 img {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+
+  }
+
+  /* 第二个缩略图样式 */
+  .slt.thumbnail2 img {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+
+  }
+  /* 第三个缩略图样式 */
+  .slt.thumbnail3 img {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+
+  }
+  /* 第四个缩略图样式 */
+  .slt.thumbnail4 img {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+
+  }
+  
+  /* 图片遮罩层样式 */
+  .slt .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(0, 0, 0, 0.566);
+    opacity: 0;
+    color: #ffffff;
+    transition: opacity 0.3s;
+  }
+
+  /* 鼠标悬停时显示图片遮罩层 */
+  .slt:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* 图片描述样式 */
+  
+
+  /* 鼠标悬停时显示图片描述 */
+  .slt:hover .caption {
+    opacity: 1;
+  }
+  /*底部开始*/
+ .dibu{
+  margin-top: 30px;  /*上边距*/
+  height: 150px;
+  width: 100%;
+  background-color: #8b8e5d;
+ }
+  .zuobian h3{
+    color: #890404;
+    font: normal normal 40px '标题';
+    margin-left: 100px; /*左边距*/
+  }
+  .zuobian p{
+    margin-top: 70px;  /*上边距*/
+    margin-left: 50px; /*左边距*/
+  }
+  .zhonjian {
+    margin-left: 100px; /*左边距*/
+   
+  }
+  .zhonjian p{
+    margin-top: 27px;
+  }
+  /*!!!!!!!!首页结束！！！！*/
+.jd{
+  margin-left: 10%; /*左边距*/
+}
+.xt{
+  width: 30%;
+  height: 5px;
+  background-color: #34151589;
+}
+.dj{
+  margin-left: 80%; /*左边距*/
+}
+.xt2{
+  width: 30%;
+  height: 5px;
+  background-color: #34151589;
+  margin-left: 70%; /*左边距*/
+}
+.video-container {
+ 
+  aspect-ratio: 16/6;
+  overflow: hidden;
+  margin: 10px;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*视觉永靖结束！！！！*/
+.tcdu{
+  width: 100%;
+  
+}
+.tcdu img{
+  width: 98%;
+  height: 400px;
+margin: 1%;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  margin: 7px;
+  
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 95%;
+  padding: 5px;
+  background-color: #6662626f;
+  margin: 10px;
+  border-radius: 30px;   /*边角变为圆形*/
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.image {
+  width: 40%;
+  margin-right: 10px;
+}
+
+.xc {
+  margin: 1%;
+  align-items: center;
+  justify-content: center;
+width: 20%;
+}
+
+.xc-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #a2883aa8;
+  transition: all 1s ease;
+}
+
+.xc-box:hover {
+  transform: scale(1.1);
+}
+
+.xc-image {
+  width: 100%;
+  height: 10%;
+}
+
+.xc-bt {
+  margin: 10px 0;
+}
+
+.xc-nr {
+  display: none;
+}
+
+.xc-box:hover .xc-bt {
+  display: none;
+}
+
+.xc-box:hover .xc-nr {
+  display: block;
+}
+/*特产介绍结束！！！！！！！！*/
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.slider {
+  display: flex;
+  animation: slide 10s linear infinite;
+  width: 100%;
+}
+
+.slider img {
+  width: 200px;
+  height: 150px;
+margin: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-5);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+ .wh-card {
+  display: flex; /* 使用flex布局 */
+  margin-left: 10px; /* 添加左边距 */
+  border: 2px solid #0d0d0d; /* 添加边框样式 */
+  border-radius: 5px; /* 添加圆角边框 */
+  padding: 10px; /* 添加内边距 */
+  margin: 20px;
+}
+
+.wh-video {
+ 
+  max-width: 50%; /* 视频最大宽度为50% */
+}
+
+.wh-video iframe {
+  width: 100%; /* 视频宽度为100% */
+  height: auto; /* 高度自适应 */
+}
+
+.wh-description {
+  flex: 1; /* 视频简介占据剩余空间 */
+  margin-left: 4%; /* 添加左边距 */
+}
+
+.wh-ls img {
+  float: left; /* 图片向左浮动 */
+  margin-right: 10px; /* 调整文字与图片的间距 */
+  width: 300px;
+  height: 200px;
+}
+.wh-ls p{
+  letter-spacing: 2px;
+  line-height: 2; /* 设置行高为1.5倍字体大小 */
+  margin-bottom: 40px; /* 设置段落之间的下边距为10像素 */
+}
+.wh-ls2 img{
+  float: right; /* 向右浮动 */
+}
+/*文化结束！！！！！！！！*/
+.gk img {
+  float: left; /* 图片向左浮动 */
+  margin-right: 10px; /* 调整文字与图片的间距 */
+  width: 300px;
+  height: 200px;
+}
+.gk h2{
+ margin-left: 45%; /*左边距*/
+}
+.gk p{
+  letter-spacing: 2px;
+  line-height: 2; /* 设置行高为1.5倍字体大小 */
+  margin-bottom: 40px; /* 设置段落之间的下边距为10像素 */
+}
+.gk-2 img{
+  float: right; /* 向右浮动 */
+}
+
+
+
